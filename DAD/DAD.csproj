@@ -52,6 +52,7 @@
       <DependentUpon>gameSetup.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\gs_datatypes.cs" />
+    <Compile Include="Equipment\Equipment.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
