@@ -14,7 +14,15 @@ namespace DAD
     {
         public Form1()
         {
+            this.CenterToScreen();
             InitializeComponent();
+        }
+
+        private void gamesetupBtn_Click(object sender, EventArgs e)
+        {
+            Classes.gameSetup GS = new Classes.gameSetup();
+            GS.Show();
+            Hide();
         }
     }
 }
