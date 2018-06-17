@@ -130,11 +130,11 @@ namespace DAD.Equipment {
             allWeapons = new EquClasses.Weapon[] { WoodSpear};
         }
         public EquClasses.Weapon getWeapon (string Name) {
-            return listIndexer(allWeapons, "WoodSpear");
+            return listIndexer(allWeapons, Name);
         }
         private EquClasses.Weapon listIndexer (EquClasses.Weapon[] weaponList, string weaponName) {
-            for(int i = 0; i > weaponList.GetLength(0); i++) {
-                if (weaponName == weaponList[i].Name) {
+            for(int i = 0; i < weaponList.Length; i++) {
+                if (weaponName.ToString() == weaponList[i].Name.ToString()) {
                     return weaponList[i];
                 }
             }

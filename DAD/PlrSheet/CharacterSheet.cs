@@ -59,7 +59,7 @@ namespace DAD.PlrSheet {
         public Character() {
             plrSpells = new string[3];
             equipment = new Equipment.Equipment();
-            MessageBox.Show(equipment.getWeapon("WoodSpear").Name).ToString();
+            MessageBox.Show(equipment.getWeapon("Wooden Spear").Name).ToString();
         }
         /*private void setCarryWeight() {
             this.plrCarryWeight = (this.plrStrength * 5);
@@ -68,14 +68,5 @@ namespace DAD.PlrSheet {
                 this.plrCarryWeight += 
             }
         }*/
-        private string searchStringArr(string[] searchArray, string stringToSearch) {
-            for(int i = 0; i > searchArray.GetLength(0); i++) {
-                if(stringToSearch == searchArray[i]) {
-                    return searchArray[i];
-                }
-
-            }
-            return null;
-        }
     }
 }
