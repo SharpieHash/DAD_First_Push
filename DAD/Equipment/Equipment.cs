@@ -14,7 +14,7 @@ namespace DAD.Equipment {
         private dynamic Spears;
         private EquClasses.Weapon WoodSpear = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"{'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'}");
 
-        private string Spearli = @"{
+       /* private string Spearli = @"{
                          'WoodSpear' : {'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
                          'StoneSpear' : {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
                          'IronSpear' : {'Name': 'Iron Spear', 'Weight': '4', 'Price': '2', 'Damage': '3', 'type': 'Weapon', 'ProficencyReq': '2'},

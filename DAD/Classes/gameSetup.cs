@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DAD.PlrSheet;
+using System;
 using System.Drawing;
 using System.Net;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace DAD.Classes
 
         public void gameSetup_Load(object sender, EventArgs e)
         {
+            PlrSheet.Character charc = new Character();
             detectBtn.Enabled = false;
             detectBtn.Hide();
             detectBtn.Visible = false;
@@ -41,15 +43,18 @@ namespace DAD.Classes
             detectBtn.Enabled = true;
             detectBtn.Show();
             detectBtn.Visible = true;
+            checkApply();
         }
 
         public void checkApply()
         {
             Classes.gs_datatypes GSD = new gs_datatypes();
-            if (String.IsNullOrEmpty(ipv4Txt.Text) && String.IsNullOrEmpty(portTxt.Text))
+            if (!String.IsNullOrEmpty(ipv4Txt.Text) && !String.IsNullOrEmpty(portTxt.Text))
             {
-                if (GSD.adOption || GSD.dmMasterOption)
+                MessageBox.Show("dddddddd");
+                if (GSD.adOption == true || GSD.dmMasterOption == true)
                 {
+                    MessageBox.Show("sss");
                     applyBtn.Show();
                     applyBtn.Visible = true;
                 }
