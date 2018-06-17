@@ -9,7 +9,7 @@ namespace DAD.Equipment {
     class Equipment {
         // Instance variables
         // Weapons
-        private dynamic Spears;
+       /* private dynamic Spears;
         private string Spearli = @"{
                          'WoodSpear' : {'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
                          'StoneSpear' : {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
@@ -127,5 +127,6 @@ namespace DAD.Equipment {
         public string[] getSwords(string swordName) {
             return null;
         }
+        */
     }
 }

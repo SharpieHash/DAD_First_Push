@@ -7,16 +7,23 @@ namespace DAD.Classes
 {
     public partial class gameSetup : Form
     {
+        public Button detect = new Button();
+
         public gameSetup()
         {
             this.CenterToScreen();
             InitializeComponent();
         }
 
-        private void gameSetup_Load(object sender, EventArgs e)
+        public void gameSetup_Load(object sender, EventArgs e)
         {
-
+            detectBtn.Enabled = false;
+            detectBtn.Hide();
+            detectBtn.Visible = false;
+            applyBtn.Hide();
+            applyBtn.Visible = false;
         }
+
 
         private void detectBtn_Click(object sender, EventArgs e)
         {
@@ -31,6 +38,22 @@ namespace DAD.Classes
             GSD.adOption = false;
             dmasterOption.BackColor = Color.Green;
             GSD.dmMasterOption = true;
+            detectBtn.Enabled = true;
+            detectBtn.Show();
+            detectBtn.Visible = true;
+        }
+
+        public void checkApply()
+        {
+            Classes.gs_datatypes GSD = new gs_datatypes();
+            if (String.IsNullOrEmpty(ipv4Txt.Text) && String.IsNullOrEmpty(portTxt.Text))
+            {
+                if (GSD.adOption || GSD.dmMasterOption)
+                {
+                    applyBtn.Show();
+                    applyBtn.Visible = true;
+                }
+            }
         }
 
         private void adOption_Click(object sender, EventArgs e)
@@ -40,6 +63,14 @@ namespace DAD.Classes
             GSD.dmMasterOption = false;
             adOption.BackColor = Color.Green;
             GSD.adOption = true;
+            detectBtn.Enabled = false;
+            detectBtn.Hide();
+            detectBtn.Visible = false;
+            if (!detectBtn.Visible)
+            {
+                ipv4Txt.Text = string.Empty;
+            }
+            checkApply();
         }
     }
 }

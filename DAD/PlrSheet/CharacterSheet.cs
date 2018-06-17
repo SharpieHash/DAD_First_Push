@@ -57,13 +57,15 @@ namespace DAD.PlrSheet {
         //Constructor
         public Character() {
             plrSpells = new string[3];
-            equipment = new Equipment.Equipment()
+            //equipment = new Equipment.Equipment()
         }
         private void setCarryWeight() {
             this.plrCarryWeight = (this.plrStrength * 5);
-            if (searchStringArr(this.plrEquiptment, "% BackPack") == equipment.){
+            /*
+                if (searchStringArr(this.plrEquiptment, "% BackPack") == equipment){
 
             }
+            */
         }
         private string searchStringArr(string[] searchArray, string stringToSearch) {
             for(int i = 0; i > searchArray.GetLength(0); i++) {
