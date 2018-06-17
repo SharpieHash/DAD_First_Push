@@ -60,7 +60,6 @@ namespace DAD.PlrSheet {
             plrSpells = new string[3];
             equipment = new Equipment.Equipment();
             MessageBox.Show(equipment.getWeapon("WoodSpear").Name).ToString();
-
         }
         /*private void setCarryWeight() {
             this.plrCarryWeight = (this.plrStrength * 5);
@@ -78,6 +77,5 @@ namespace DAD.PlrSheet {
             }
             return null;
         }
-
     }
 }
