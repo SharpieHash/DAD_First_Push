@@ -31,12 +31,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ipv4Txt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.detectBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.portTxt = new System.Windows.Forms.TextBox();
             this.dmasterOption = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.adOption = new System.Windows.Forms.Button();
+            this.detectBtn = new System.Windows.Forms.Button();
+            this.applyBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -46,7 +47,7 @@
             this.label2.ForeColor = System.Drawing.Color.Red;
             this.label2.Location = new System.Drawing.Point(106, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 34);
+            this.label2.Size = new System.Drawing.Size(175, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Game Setup";
             // 
@@ -65,21 +66,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(128, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 25);
+            this.label1.Size = new System.Drawing.Size(126, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "IP ADDRESS";
-            // 
-            // detectBtn
-            // 
-            this.detectBtn.BackColor = System.Drawing.Color.Transparent;
-            this.detectBtn.ForeColor = System.Drawing.Color.Black;
-            this.detectBtn.Location = new System.Drawing.Point(306, 119);
-            this.detectBtn.Name = "detectBtn";
-            this.detectBtn.Size = new System.Drawing.Size(98, 26);
-            this.detectBtn.TabIndex = 5;
-            this.detectBtn.Text = "DETECT";
-            this.detectBtn.UseVisualStyleBackColor = false;
-            this.detectBtn.Click += new System.EventHandler(this.detectBtn_Click);
             // 
             // label3
             // 
@@ -88,7 +77,7 @@
             this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(12, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 25);
+            this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "PORT";
             // 
@@ -118,7 +107,7 @@
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(12, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(262, 34);
+            this.label4.Size = new System.Drawing.Size(222, 29);
             this.label4.TabIndex = 9;
             this.label4.Text = "WHO ARE YOU?";
             // 
@@ -133,12 +122,37 @@
             this.adOption.UseVisualStyleBackColor = true;
             this.adOption.Click += new System.EventHandler(this.adOption_Click);
             // 
+            // detectBtn
+            // 
+            this.detectBtn.BackColor = System.Drawing.Color.Transparent;
+            this.detectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.detectBtn.ForeColor = System.Drawing.Color.Black;
+            this.detectBtn.Location = new System.Drawing.Point(306, 119);
+            this.detectBtn.Name = "detectBtn";
+            this.detectBtn.Size = new System.Drawing.Size(98, 32);
+            this.detectBtn.TabIndex = 5;
+            this.detectBtn.Text = "DETECT";
+            this.detectBtn.UseVisualStyleBackColor = false;
+            this.detectBtn.Click += new System.EventHandler(this.detectBtn_Click);
+            // 
+            // applyBtn
+            // 
+            this.applyBtn.BackColor = System.Drawing.Color.Green;
+            this.applyBtn.ForeColor = System.Drawing.Color.Black;
+            this.applyBtn.Location = new System.Drawing.Point(128, 369);
+            this.applyBtn.Name = "applyBtn";
+            this.applyBtn.Size = new System.Drawing.Size(146, 32);
+            this.applyBtn.TabIndex = 11;
+            this.applyBtn.Text = "APPLY";
+            this.applyBtn.UseVisualStyleBackColor = false;
+            // 
             // gameSetup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(416, 413);
+            this.Controls.Add(this.applyBtn);
             this.Controls.Add(this.adOption);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dmasterOption);
@@ -162,11 +176,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ipv4Txt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button detectBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox portTxt;
         private System.Windows.Forms.Button dmasterOption;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button adOption;
+        private System.Windows.Forms.Button detectBtn;
+        private System.Windows.Forms.Button applyBtn;
     }
 }
