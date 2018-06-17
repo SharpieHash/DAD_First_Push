@@ -10,10 +10,10 @@ namespace DAD.Equipment {
     class Equipment {
         // Instance variables
         // Weapons
-        private EquClasses.Weapon[] allWeapons;
-        private EquClasses.Weapon Woodspear = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"{'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'Type': 'Weapon', 'ProficencyReq': '0'}");
-        private EquClasses.Weapon StoneSpear;
-        /*: {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
+        private dynamic Spears;
+        private string Spearli = @"{
+                         'WoodSpear' : {'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
+                         'StoneSpear' : {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
                          'IronSpear' : {'Name': 'Iron Spear', 'Weight': '4', 'Price': '2', 'Damage': '3', 'type': 'Weapon', 'ProficencyReq': '2'},
                          'SteelSpear' : {'Name': 'Steel Spear', 'Weight': '4', 'Price': '3', 'Damage': '4', 'type': 'Weapon', 'ProficencyReq': '3'},
                          'ElvenSpear' : {'Name': 'Elven Spear', 'Weight': '3', 'Price': '4', 'Damage': '4', 'type': 'Weapon', 'ProficencyReq': '4'},
@@ -138,8 +138,6 @@ namespace DAD.Equipment {
             }
             return null;
         }
-            
- 
     }
 }
 
