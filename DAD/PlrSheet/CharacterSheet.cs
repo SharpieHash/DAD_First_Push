@@ -57,14 +57,15 @@ namespace DAD.PlrSheet {
         //Constructor
         public Character() {
             plrSpells = new string[3];
-            equipment = new Equipment.Equipment()
+            equipment = new Equipment.Equipment();
         }
-        private void setCarryWeight() {
+        /*private void setCarryWeight() {
             this.plrCarryWeight = (this.plrStrength * 5);
-            if (searchStringArr(this.plrEquiptment, "% BackPack") == equipment.){
-
+            string name = equipment.Spears.
+            if (){
+                this.plrCarryWeight += 
             }
-        }
+        }*/
         private string searchStringArr(string[] searchArray, string stringToSearch) {
             for(int i = 0; i > searchArray.GetLength(0); i++) {
                 if(stringToSearch == searchArray[i]) {
@@ -73,6 +74,10 @@ namespace DAD.PlrSheet {
 
             }
             return null;
+        }
+        ~Character() {
+            Console.WriteLine(equipment.getWeapon("WoodSpear").Name);
+
         }
     }
 }

@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAD.Equipment {
     class Equipment {
         // Instance variables
         // Weapons
-        private dynamic Spears;
-        private string Spearli = @"{
-                         'WoodSpear' : {'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
-                         'StoneSpear' : {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
+        private EquClasses.Weapon[] allWeapons;
+        private EquClasses.Weapon Woodspear = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"{'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'Type': 'Weapon', 'ProficencyReq': '0'}");
+        private EquClasses.Weapon StoneSpear;
+        /*: {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
                          'IronSpear' : {'Name': 'Iron Spear', 'Weight': '4', 'Price': '2', 'Damage': '3', 'type': 'Weapon', 'ProficencyReq': '2'},
                          'SteelSpear' : {'Name': 'Steel Spear', 'Weight': '4', 'Price': '3', 'Damage': '4', 'type': 'Weapon', 'ProficencyReq': '3'},
                          'ElvenSpear' : {'Name': 'Elven Spear', 'Weight': '3', 'Price': '4', 'Damage': '4', 'type': 'Weapon', 'ProficencyReq': '4'},
@@ -20,7 +21,7 @@ namespace DAD.Equipment {
                          'OrcishSpear' : {'Name': 'Orcish Spear', 'Weight': '5', 'Price': '7', 'Damage': '6', 'type': 'Weapon', 'ProficencyReq': '6'},
                          'LegendarySpear' : {'Name': 'Legendary Spear', 'Weight': '8', 'Price': '10', 'Damage': '8', 'type': 'Weapon', 'ProficencyReq': '7'},
                          'DragonBoneSpear' : {'Name': 'Dragon Bone Spear', 'Weight': '10', 'Price': '15', 'Damage': '10', 'type': 'Weapon', 'ProficencyReq': '8'}
-                         }";
+                         }";*/
         private dynamic Swords;
         private string Swordli = @"{
                          'WoodSword' : {'Name': 'Wooden Sword', 'Weight': '1', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
@@ -33,7 +34,8 @@ namespace DAD.Equipment {
                          'LegendarySword' : {'Name': 'Legendary Sword', 'Weight': '8', 'Price': '10', 'Damage': '8', 'type': 'Weapon', 'ProficencyReq': '7'},
                          'DragonBoneSword' : {'Name': 'Dragon Bone Sword', 'Weight': '10', 'Price': '15', 'Damage': '10', 'type': 'Weapon', 'ProficencyReq': '8'}
                          }";
-        private dynamic Axes = @"{
+        private dynamic Axes;
+        private string Axeli = @"{
                          'WoodAxe' : {'Name': 'Wooden Axe', 'Weight': '1', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
                          'StoneAxe' : {'Name': 'Stone Axe', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
                          'IronAxe' : {'Name': 'Iron Axe', 'Weight': '4', 'Price': '2', 'Damage': '3', 'type': 'Weapon', 'ProficencyReq': '2'},
@@ -122,10 +124,23 @@ namespace DAD.Equipment {
         //
         // Constructor
         public Equipment() {
-            Spears = JsonConvert.DeserializeObject{ };
+            allWeapons = new EquClasses.Weapon[] { Woodspear};
         }
-        public string[] getSwords(string swordName) {
+        public EquClasses.Weapon getWeapon (string Name) {
             return null;
         }
+        private EquClasses.Weapon listIndexer (EquClasses.Weapon[] weaponList, string weaponName) {
+            for(int i = 0; i > weaponList.GetLength(0); i++) {
+                if (weaponName == weaponList[i].Name) {
+                    return weaponList[i];
+
+                }
+            }
+            return null;
+        }
+            
+ 
     }
 }
+
+
