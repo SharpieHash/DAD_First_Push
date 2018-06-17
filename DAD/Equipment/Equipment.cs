@@ -10,7 +10,10 @@ namespace DAD.Equipment {
     class Equipment {
         // Instance variables
         // Weapons
+        private EquClasses.Weapon[] allWeapons;
         private dynamic Spears;
+        private EquClasses.Weapon WoodSpear = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"{'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'}");
+
         private string Spearli = @"{
                          'WoodSpear' : {'Name': 'Wooden Spear', 'Weight': '2', 'Price': '0', 'Damage': '1', 'type': 'Weapon', 'ProficencyReq': '0'},
                          'StoneSpear' : {'Name': 'Stone Spear', 'Weight': '3', 'Price': '1', 'Damage': '2', 'type': 'Weapon', 'ProficencyReq': '1'},
@@ -124,7 +127,7 @@ namespace DAD.Equipment {
         //
         // Constructor
         public Equipment() {
-            allWeapons = new EquClasses.Weapon[] { Woodspear};
+            allWeapons = new EquClasses.Weapon[] { WoodSpear};
         }
         public EquClasses.Weapon getWeapon (string Name) {
             return null;
@@ -133,7 +136,6 @@ namespace DAD.Equipment {
             for(int i = 0; i > weaponList.GetLength(0); i++) {
                 if (weaponName == weaponList[i].Name) {
                     return weaponList[i];
-
                 }
             }
             return null;

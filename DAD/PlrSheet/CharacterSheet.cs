@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DAD.PlrSheet {
 
@@ -76,7 +77,7 @@ namespace DAD.PlrSheet {
             return null;
         }
         ~Character() {
-            Console.WriteLine(equipment.getWeapon("WoodSpear").Name);
+            MessageBox.Show(equipment.getWeapon("WoodSpear").Name).ToString();
 
         }
     }
