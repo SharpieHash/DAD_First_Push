@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adventureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adventureForm.Designer.cs">
+      <DependentUpon>adventureForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\gameSetup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,12 @@
       <DependentUpon>gameSetup.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\gs_datatypes.cs" />
+    <Compile Include="dungeonMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dungeonMaster.Designer.cs">
+      <DependentUpon>dungeonMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="Equipment\EquClasses\Armour.cs" />
     <Compile Include="Equipment\EquClasses\Weapon.cs" />
     <Compile Include="Equipment\Equipment.cs" />

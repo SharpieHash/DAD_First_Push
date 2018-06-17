@@ -53,11 +53,13 @@
             // 
             // ipv4Txt
             // 
+            this.ipv4Txt.BackColor = System.Drawing.Color.White;
             this.ipv4Txt.ForeColor = System.Drawing.Color.Black;
             this.ipv4Txt.Location = new System.Drawing.Point(112, 119);
             this.ipv4Txt.Name = "ipv4Txt";
             this.ipv4Txt.Size = new System.Drawing.Size(188, 26);
             this.ipv4Txt.TabIndex = 3;
+            this.ipv4Txt.Leave += new System.EventHandler(this.ipv4Txt_Leave);
             // 
             // label1
             // 
@@ -83,11 +85,13 @@
             // 
             // portTxt
             // 
+            this.portTxt.BackColor = System.Drawing.Color.White;
             this.portTxt.ForeColor = System.Drawing.Color.Black;
             this.portTxt.Location = new System.Drawing.Point(12, 119);
             this.portTxt.Name = "portTxt";
             this.portTxt.Size = new System.Drawing.Size(74, 26);
             this.portTxt.TabIndex = 7;
+            this.portTxt.TextChanged += new System.EventHandler(this.portTxt_TextChanged);
             // 
             // dmasterOption
             // 
@@ -139,12 +143,13 @@
             // 
             this.applyBtn.BackColor = System.Drawing.Color.Green;
             this.applyBtn.ForeColor = System.Drawing.Color.Black;
-            this.applyBtn.Location = new System.Drawing.Point(128, 369);
+            this.applyBtn.Location = new System.Drawing.Point(112, 369);
             this.applyBtn.Name = "applyBtn";
             this.applyBtn.Size = new System.Drawing.Size(146, 32);
             this.applyBtn.TabIndex = 11;
             this.applyBtn.Text = "APPLY";
             this.applyBtn.UseVisualStyleBackColor = false;
+            this.applyBtn.Click += new System.EventHandler(this.applyBtn_Click);
             // 
             // gameSetup
             // 
