@@ -19,6 +19,7 @@ namespace DAD.Classes
 
         public void gameSetup_Load(object sender, EventArgs e)
         {
+            PlrSheet.Character charc = new PlrSheet.Character();
             detectBtn.Enabled = false;
             detectBtn.Hide();
             detectBtn.Visible = false;
