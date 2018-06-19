@@ -90,7 +90,7 @@ namespace DAD.Equipment {
             MessageBox.Show(Int32.Parse(weaponLi.Weapon[1].Price*3)).toString();
         }
         private void ConvertAllWeapons() {
-            for (int i = 0; i < weaponLi.Weapon.Count; i++) {
+            for (int i = 0; *i < weaponLi.Weapon.Count; i++) {
                 Int32.Parse(weaponLi.Weapon[i].Name);
                 Int32.Parse(weaponLi.Weapon[i].Price);
                 Int32.Parse(weaponLi.Weapon[i].Damage);
