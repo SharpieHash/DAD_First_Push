@@ -84,14 +84,21 @@ namespace DAD.Equipment {
             loadWeapons();
         }
         private void loadWeapons() {
-            string Weaponjson = File.ReadAllText(@"EquJson/WeaponList.json");
+            dynamic Weaponjson = File.ReadAllText(@"EquJson/WeaponList.json");
             weaponLi = JsonConvert.DeserializeObject<EquClasses.rootWeapon>(Weaponjson);
-            MessageBox.Show(weaponLi.Weapon[12].Name);
+            ConvertAllWeapons();
+            MessageBox.Show(Int32.Parse(weaponLi.Weapon[1].Price*3)).toString();
         }
-
+        private void ConvertAllWeapons() {
+            for (int i = 0; i < weaponLi.Weapon.Count; i++) {
+                Int32.Parse(weaponLi.Weapon[i].Name);
+                Int32.Parse(weaponLi.Weapon[i].Price);
+                Int32.Parse(weaponLi.Weapon[i].Damage);
+                Int32.Parse(weaponLi.Weapon[i].Proficency);
+            }
+        }
     }
-        
-    }
+}
 
 
 
