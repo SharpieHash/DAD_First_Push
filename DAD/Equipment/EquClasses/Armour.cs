@@ -13,7 +13,10 @@ namespace DAD.Equipment.EquClasses {
         public string Type = "Weapons";
         public int Proficency { get; set; }
     }
-    public class RootArmour{
+    public class RootArmour {
         public List<Armour> Armour { get; set; }
+        public RootArmour(){
+            
+        }
     }
 }
