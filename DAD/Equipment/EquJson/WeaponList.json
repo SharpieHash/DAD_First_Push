@@ -7,7 +7,7 @@
       "Damage": "1",
       "Type": "MeleeWeaponSpear",
       "ProficencyReq": "0",
-      "Description":  "A Basic Wooden Spear. Not good for much, It won't win you a war."
+      "Description": "A Basic Wooden Spear. Not good for much, It won't win you a war."
     },
     {
       "Name": "Stone Spear",
@@ -241,7 +241,7 @@
       "Damage": "10",
       "Type": "MeleeWeaponAxe",
       "ProficencyReq": "8",
-      "Description": ""
+      "Description": "A Dragon Bone Axe. It is almost like the only use for dragon bones is to make weapons."
     },
     {
       "Name": "Wooden Mace",
@@ -249,7 +249,8 @@
       "Price": "0",
       "Damage": "1",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "0"
+      "ProficencyReq": "0",
+      "Description": "A Basic Wooden Mace. Now this really is a lump of wood."
     },
     {
       "Name": "Stone Mace",
@@ -257,7 +258,8 @@
       "Price": "1",
       "Damage": "2",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "1"
+      "ProficencyReq": "1",
+      "Description": "A Stone Mace. Boulder + rope + stick, easy!"
     },
     {
       "Name": "Iron Mace",
@@ -265,7 +267,8 @@
       "Price": "2",
       "Damage": "3",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "2"
+      "ProficencyReq": "2",
+      "Description": "An Iron Mace. Heavy and spikey."
     },
     {
       "Name": "Steel Mace",
@@ -273,7 +276,8 @@
       "Price": "3",
       "Damage": "4",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "3"
+      "ProficencyReq": "3",
+      "Description": "A Steel Mace. As strong as, well, a block of steel."
     },
     {
       "Name": "Elven Mace",
@@ -281,7 +285,8 @@
       "Price": "4",
       "Damage": "4",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "4"
+      "ProficencyReq": "4",
+      "Description": "An Elven Mace. As strong as steel and as light as a feather."
     },
     {
       "Name": "Dwarven Mace",
@@ -289,7 +294,8 @@
       "Price": "5",
       "Damage": "5",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "5"
+      "ProficencyReq": "5",
+      "Description": "A Dwarven Mace. How do Dwarves carry these, its bigger than them!"
     },
     {
       "Name": "Orcish Mace",
@@ -297,7 +303,8 @@
       "Price": "7",
       "Damage": "6",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "6"
+      "ProficencyReq": "6",
+      "Description": "An Orcish Mace. Designed like an axe mace combo."
     },
     {
       "Name": "Legendary Mace",
@@ -305,7 +312,8 @@
       "Price": "10",
       "Damage": "8",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "7"
+      "ProficencyReq": "7",
+      "Description": "A Legendary Mace. A solid wrecking ball."
     },
     {
       "Name": "Dragon Bone Mace",
@@ -313,7 +321,8 @@
       "Price": "15",
       "Damage": "10",
       "Type": "MeleeWeaponMace",
-      "ProficencyReq": "8"
+      "ProficencyReq": "9",
+      "Description": "A Dragon Bone Mace. Very heavey and very dangerous."
     },
     {
       "Name": "Stone Great Sword",
@@ -321,7 +330,8 @@
       "Price": "1",
       "Damage": "2",
       "Type": "TwoHandMeleeWeaponGreatSword",
-      "ProficencyReq": "1"
+      "ProficencyReq": "1",
+      "Description": "A Stone Great Sword. Heavy and annoying."
     },
     {
       "Name": "Iron Great Sword",
@@ -329,7 +339,8 @@
       "Price": "2",
       "Damage": "3",
       "Type": "TwoHandMeleeWeaponGreatSword",
-      "ProficencyReq": "2"
+      "ProficencyReq": "2",
+      "Description": "An Iron Great Sword. Used by many a travelling mercenary."
     },
     {
       "Name": "Steel Great Sword",
@@ -337,7 +348,8 @@
       "Price": "3",
       "Damage": "4",
       "Type": "TwoHandMeleeWeaponGreatSword",
-      "ProficencyReq": "3"
+      "ProficencyReq": "3",
+      "Description": ""
     },
     {
       "Name": "Elven Great Sword",
