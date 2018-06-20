@@ -16,18 +16,6 @@ namespace DAD.Equipment {
         "ProficencyReq": ""
         }
         */
-
-
-
-
-        private EquClasses.Weapon[] Throwables;
-        //private EquClasses.Weapon StoneWarHammer = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"");
-        private EquClasses.Weapon[] Staves;
-        //private EquClasses.Weapon StoneWarHammer = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"");
-        private EquClasses.Weapon[] Scepters;
-        //private EquClasses.Weapon StoneWarHammer = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"");
-        private EquClasses.Weapon[] Boomerang;
-        //private EquClasses.Weapon StoneWarHammer = JsonConvert.DeserializeObject<EquClasses.Weapon>(@"");
         // Spells
         private dynamic HealingSpells;
         private dynamic FireSpells;
@@ -74,7 +62,6 @@ namespace DAD.Equipment {
             armourLi = new EquClasses.RootArmour();
             loadAllJson();
 
-
         }
         // Mutators
         public EquClasses.rootWeapon getWeaponList { get; set; }
@@ -84,17 +71,20 @@ namespace DAD.Equipment {
             loadWeapons();
         }
         private void loadWeapons() {
-            dynamic Weaponjson = File.ReadAllText(@"EquJson/WeaponList.json");
+            string cwr = Directory.GetCurrentDirectory();
+            DirectoryInfo cwrParent = Directory.GetParent(cwr);
+            cwrParent = cwrParent.Parent;
+            cwr = cwrParent.FullName + "/Equipment/EquJson/WeaponList.json";
+            dynamic Weaponjson = File.ReadAllText(cwr);
             weaponLi = JsonConvert.DeserializeObject<EquClasses.rootWeapon>(Weaponjson);
             ConvertAllWeapons();
-            MessageBox.Show(Int32.Parse(weaponLi.Weapon[1].Price*3)).toString();
         }
         private void ConvertAllWeapons() {
-            for (int i = 0; *i < weaponLi.Weapon.Count; i++) {
-                Int32.Parse(weaponLi.Weapon[i].Name);
-                Int32.Parse(weaponLi.Weapon[i].Price);
-                Int32.Parse(weaponLi.Weapon[i].Damage);
-                Int32.Parse(weaponLi.Weapon[i].Proficency);
+            for (int i = 0; i < weaponLi.Weapon.Count; i++) {
+                //Int32.Parse(weaponLi.Weapon[i].Name);
+                //Int32.Parse(weaponLi.Weapon[i].Price);
+                //Int32.Parse(weaponLi.Weapon[i].Damage);
+                //Int32.Parse(weaponLi.Weapon[i].Proficency);
             }
         }
     }
