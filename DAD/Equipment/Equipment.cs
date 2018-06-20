@@ -69,23 +69,15 @@ namespace DAD.Equipment {
         // Methods
         private void loadAllJson() {
             loadWeapons();
+            weaponLi.ConvertAllToInt();
         }
-        private void loadWeapons() {
+        public void loadWeapons() {
             string cwr = Directory.GetCurrentDirectory();
             DirectoryInfo cwrParent = Directory.GetParent(cwr);
             cwrParent = cwrParent.Parent;
-            cwr = cwrParent.FullName + "/Equipment/EquJson/WeaponList.json";
-            dynamic Weaponjson = File.ReadAllText(cwr);
+            cwr = cwrParent.FullName + "/JsonFiles/WeaponList.json";
+            string Weaponjson = File.ReadAllText(cwr);
             weaponLi = JsonConvert.DeserializeObject<EquClasses.rootWeapon>(Weaponjson);
-            ConvertAllWeapons();
-        }
-        private void ConvertAllWeapons() {
-            for (int i = 0; i < weaponLi.Weapon.Count; i++) {
-                //Int32.Parse(weaponLi.Weapon[i].Name);
-                //Int32.Parse(weaponLi.Weapon[i].Price);
-                //Int32.Parse(weaponLi.Weapon[i].Damage);
-                //Int32.Parse(weaponLi.Weapon[i].Proficency);
-            }
         }
     }
 }
