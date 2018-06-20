@@ -45,7 +45,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(106, 21);
+            this.label2.Location = new System.Drawing.Point(94, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 29);
             this.label2.TabIndex = 2;
@@ -55,9 +55,10 @@
             // 
             this.ipv4Txt.BackColor = System.Drawing.Color.White;
             this.ipv4Txt.ForeColor = System.Drawing.Color.Black;
-            this.ipv4Txt.Location = new System.Drawing.Point(112, 119);
+            this.ipv4Txt.Location = new System.Drawing.Point(100, 95);
+            this.ipv4Txt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ipv4Txt.Name = "ipv4Txt";
-            this.ipv4Txt.Size = new System.Drawing.Size(188, 26);
+            this.ipv4Txt.Size = new System.Drawing.Size(168, 22);
             this.ipv4Txt.TabIndex = 3;
             this.ipv4Txt.Leave += new System.EventHandler(this.ipv4Txt_Leave);
             // 
@@ -66,7 +67,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(128, 77);
+            this.label1.Location = new System.Drawing.Point(114, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 20);
             this.label1.TabIndex = 4;
@@ -77,7 +78,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 77);
+            this.label3.Location = new System.Drawing.Point(11, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 6;
@@ -87,18 +88,20 @@
             // 
             this.portTxt.BackColor = System.Drawing.Color.White;
             this.portTxt.ForeColor = System.Drawing.Color.Black;
-            this.portTxt.Location = new System.Drawing.Point(12, 119);
+            this.portTxt.Location = new System.Drawing.Point(11, 95);
+            this.portTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.portTxt.Name = "portTxt";
-            this.portTxt.Size = new System.Drawing.Size(74, 26);
+            this.portTxt.Size = new System.Drawing.Size(66, 22);
             this.portTxt.TabIndex = 7;
             this.portTxt.TextChanged += new System.EventHandler(this.portTxt_TextChanged);
             // 
             // dmasterOption
             // 
             this.dmasterOption.ForeColor = System.Drawing.Color.Black;
-            this.dmasterOption.Location = new System.Drawing.Point(12, 203);
+            this.dmasterOption.Location = new System.Drawing.Point(11, 162);
+            this.dmasterOption.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dmasterOption.Name = "dmasterOption";
-            this.dmasterOption.Size = new System.Drawing.Size(262, 59);
+            this.dmasterOption.Size = new System.Drawing.Size(233, 47);
             this.dmasterOption.TabIndex = 8;
             this.dmasterOption.Text = "Dungeon Master";
             this.dmasterOption.UseVisualStyleBackColor = true;
@@ -109,7 +112,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(12, 166);
+            this.label4.Location = new System.Drawing.Point(11, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(222, 29);
             this.label4.TabIndex = 9;
@@ -118,9 +121,10 @@
             // adOption
             // 
             this.adOption.ForeColor = System.Drawing.Color.Black;
-            this.adOption.Location = new System.Drawing.Point(12, 268);
+            this.adOption.Location = new System.Drawing.Point(11, 214);
+            this.adOption.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.adOption.Name = "adOption";
-            this.adOption.Size = new System.Drawing.Size(262, 59);
+            this.adOption.Size = new System.Drawing.Size(233, 47);
             this.adOption.TabIndex = 10;
             this.adOption.Text = "Adventurer";
             this.adOption.UseVisualStyleBackColor = true;
@@ -131,9 +135,10 @@
             this.detectBtn.BackColor = System.Drawing.Color.Transparent;
             this.detectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.detectBtn.ForeColor = System.Drawing.Color.Black;
-            this.detectBtn.Location = new System.Drawing.Point(306, 119);
+            this.detectBtn.Location = new System.Drawing.Point(272, 95);
+            this.detectBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.detectBtn.Name = "detectBtn";
-            this.detectBtn.Size = new System.Drawing.Size(98, 32);
+            this.detectBtn.Size = new System.Drawing.Size(87, 26);
             this.detectBtn.TabIndex = 5;
             this.detectBtn.Text = "DETECT";
             this.detectBtn.UseVisualStyleBackColor = false;
@@ -143,9 +148,10 @@
             // 
             this.applyBtn.BackColor = System.Drawing.Color.Green;
             this.applyBtn.ForeColor = System.Drawing.Color.Black;
-            this.applyBtn.Location = new System.Drawing.Point(112, 369);
+            this.applyBtn.Location = new System.Drawing.Point(100, 295);
+            this.applyBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.applyBtn.Name = "applyBtn";
-            this.applyBtn.Size = new System.Drawing.Size(146, 32);
+            this.applyBtn.Size = new System.Drawing.Size(130, 26);
             this.applyBtn.TabIndex = 11;
             this.applyBtn.Text = "APPLY";
             this.applyBtn.UseVisualStyleBackColor = false;
@@ -153,10 +159,10 @@
             // 
             // gameSetup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(416, 413);
+            this.ClientSize = new System.Drawing.Size(370, 330);
             this.Controls.Add(this.applyBtn);
             this.Controls.Add(this.adOption);
             this.Controls.Add(this.label4);
@@ -167,7 +173,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ipv4Txt);
             this.Controls.Add(this.label2);
+            this.Cursor = System.Windows.Forms.Cursors.Cross;
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "gameSetup";
             this.Text = "Game Setup";
             this.Load += new System.EventHandler(this.gameSetup_Load);

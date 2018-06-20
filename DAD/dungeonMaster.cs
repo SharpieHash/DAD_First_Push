@@ -16,5 +16,30 @@ namespace DAD
         {
             InitializeComponent();
         }
+
+        private void dungeonMaster_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locationOneBtn_Click(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void locationTwoBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locationThreeBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void locationFourBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
