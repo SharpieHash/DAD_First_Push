@@ -22,19 +22,25 @@ namespace DAD.BiomesJson {
     }
     class Biome {
         //JPEG size 250x120
+        //Map size 1080x268
         public string Name { get; set; }
         public dynamic Temprature { get; set; }
         public dynamic Humidity { get; set; }
         public string ControllingFaction { get; set; }
         public dynamic Height { get; set; }
         public List<string> CharacterBonus { get; set; }
-        public List<SubBiome> subBiomes { get; set; } 
+        public List<SubBiome> subBiomes { get; set; }
         public string JpgName { get; set; }
     }
     class SubBiome {
-        public string Name { get; set; }
+        Random rd = new Random();
+        public string Name() { return genName("_"); }
         public string JpgLocation { get; set; }
         public string Type { get; set; }
-        public dynamic NumOfMobs { get; set; }
+        private int NumOfMobs() { return rd.Next(0, 3); }
+        public void MobsInArea() { /*List<string> return using randomNumOfMobs and the mob character sheets*/}
+        private string genName(string placeType) {
+            return null;
+        }
     }
 }

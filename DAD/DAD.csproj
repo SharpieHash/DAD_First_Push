@@ -95,6 +95,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="JsonFiles\DebugCharacter.json" />
     <None Include="JsonFiles\WeaponList.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

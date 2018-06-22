@@ -10,45 +10,45 @@ namespace DAD.PlrSheet {
     public class Character {
         //Instance variables
         // Character info
-        private string plrName;
-        private string plrClass;
-        private string plrRace;
-        private int plrLevel;
-        private string plrBackground;
-        private string userName;
-        private string plrAlignment;
-        private int plrExperience;
+        public string plrName { get; set; }
+        public string plrClass { get; set; }
+        public string plrRace { get; set; }
+        public dynamic plrLevel { get; set; }
+        public string plrBackground { get; set; }
+        public string userName { get; set; }
+        public string plrAlignment { get; set; }
+        public dynamic plrExperience { get; set; }
         // Character Vitals
-        private int plrArmour;
-        private int plrHP;
+        public dynamic plrArmour { get; set; }
+        public dynamic plrHP { get; set; }
 
         // Character Saving throws
-        private int plrSaveStrength;
-        private int plrSaveDexterity;
-        private int plrSaveConstitution;
-        private int plrSaveInteligence;
-        private int plrSaveWisdom;
-        private int plrSaveCharisma;
+        public dynamic plrSaveStrength { get; set; }
+        public dynamic plrSaveDexterity { get; set; }
+        public dynamic plrSaveConstitution { get; set; }
+        public dynamic plrSaveInteligence { get; set; }
+        public dynamic plrSaveWisdom { get; set; }
+        public dynamic plrSaveCharisma { get; set; }
         // Character Skills
-        private int plrStrength;
-        private int plrDexterity;
-        private int plrConstitution;
-        private int plrInteligence;
-        private int plrWisdom;
-        private int plrCharisma;
-        private int plrPerception;
+        public dynamic plrStrength { get; set; }
+        public dynamic plrDexterity { get; set; }
+        public dynamic plrConstitution { get; set; }
+        public dynamic plrInteligence { get; set; }
+        public dynamic plrWisdom { get; set; }
+        public dynamic plrCharisma { get; set; }
+        public dynamic plrPerception { get; set; }
         // Character Proficiency
-        private int plrProfiency;
+        public dynamic plrProfiency { get; set; }
         // Character Aspirations
-        private string plrPersonality;
-        private string plrIdeals;
-        private string plrBonds;
-        private string plrFlaws;
+        public string plrPersonality { get; set; }
+        public string plrIdeals { get; set; }
+        public string plrBonds { get; set; }
+        public string plrFlaws { get; set; }
         // Character Equipment
-        private string[] plrEquiptment;
-        private int plrCarryWeight;
+        public List<string> plrEquiptment { get; set; }
+        public dynamic plrCarryWeight { get; set; }
         // Character Attacks and Spellcasting
-        private string[] plrSpells;
+        public string[] plrSpells { get; set; }
         // Character Traits
 
         // Character
@@ -68,5 +68,27 @@ namespace DAD.PlrSheet {
                 this.plrCarryWeight += 
             }
         }*/
+    }
+    public class rootCharacter {
+        public List<Character> Character { get; set; }
+        public void ConvertAllToInt() {
+            for (int i= 0; i < this.Character.Count; i++) {
+                Character[i].plrLevel = Convert.ToInt32(this.Character[i].plrLevel);
+                Character[i].plrExperience = Convert.ToInt32(this.Character[i].plrExperience);
+                Character[i].plrSaveStrength = Convert.ToInt32(this.Character[i].plrSaveStrength);
+                Character[i].plrSaveDexterity = Convert.ToInt32(this.Character[i].plrSaveDexterity);
+                Character[i].plrSaveConstitution = Convert.ToInt32(this.Character[i].plrSaveConstitution);
+                Character[i].plrSaveInteligence = Convert.ToInt32(this.Character[i].plrSaveInteligence);
+                Character[i].plrSaveWisdom = Convert.ToInt32(this.Character[i].plrSaveWisdom);
+                Character[i].plrSaveCharisma = Convert.ToInt32(this.Character[i].plrSaveCharisma);
+                Character[i].plrStrength = Convert.ToInt32(this.Character[i].plrStrength);
+                Character[i].plrDexterity = Convert.ToInt32(this.Character[i].plrDexterity);
+                Character[i].plrConstitution = Convert.ToInt32(this.Character[i].plrConstitution);
+                Character[i].plrInteligence = Convert.ToInt32(this.Character[i].plrInteligence);
+                Character[i].plrWisdom = Convert.ToInt32(this.Character[i].plrWisdom);
+                Character[i].plrCharisma = Convert.ToInt32(this.Character[i].plrCharisma);
+                Character[i].plrPerception = Convert.ToInt32(this.Character[i].plrPerception);
+            }
+        }
     }
 }
