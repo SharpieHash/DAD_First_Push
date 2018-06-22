@@ -83,6 +83,9 @@
     <EmbeddedResource Include="Classes\gameSetup.resx">
       <DependentUpon>gameSetup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="dungeonMaster.resx">
+      <DependentUpon>dungeonMaster.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +113,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="PlrSheet\characterInfo.html" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
