@@ -1,6 +1,33 @@
 ﻿{
   "Character": [
-
+    {
+      "plrName": "Sir Cock Sniffer",
+      "plrClass": "Fire Mage",
+      "plrRace": "Black As Fuck",
+      "plrLevel": "10",
+      "userName": "BadgersPyjamas",
+      "plrAlignment": "Neutral",
+      "plrExperience": "0",
+      "plrArmour": "10",
+      "plrHP": "20",
+      "plrStrength": "3",
+      "plrDexterity": "1",
+      "plrConstitution": "2",
+      "plrIntelligence": "4",
+      "plrWisdom": "2",
+      "plrCharisma": "3",
+      "plrPreception": "4",
+      "plrProfiency": "8",
+      "plrPersonality": "Raging alcoholic",
+      "plrIdeals": "I want a bigger cock",
+      "plrBonds": "I have a Huge Cock",
+      "plrFlaws": "I dont like fire",
+      "plrEquipment": [
+        "Wooden Sword",
+        "Flaming Boomerang"
+      ],
+      "plrCarryWeight": "15"
+    }
   ]
 
 }

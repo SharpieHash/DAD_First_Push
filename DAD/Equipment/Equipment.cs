@@ -79,6 +79,15 @@ namespace DAD.Equipment {
             string Weaponjson = File.ReadAllText(cwr);
             weaponLi = JsonConvert.DeserializeObject<EquClasses.rootWeapon>(Weaponjson);
         }
+        public int findWeaponIndexByName(string weaponName) {
+            for(int i = 0; i < weaponLi.Weapon.Count; i++) {
+                if(weaponName == weaponLi.Weapon[i].Name) {
+                    return i;
+                }
+
+            }
+            return -1;
+        } 
     }
 }
 

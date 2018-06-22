@@ -77,7 +77,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="BiomesJson\Biome.cs" />
-    <Compile Include="PlrSheet\CharacterSheet.cs" />
+    <Compile Include="PlrSheet\Character.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Classes\gameSetup.resx">
