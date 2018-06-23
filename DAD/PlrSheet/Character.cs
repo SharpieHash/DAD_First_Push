@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -77,6 +78,14 @@ namespace DAD.PlrSheet {
                 Character[i].plrCharisma = Convert.ToInt32(this.Character[i].plrCharisma);
                 Character[i].plrPerception = Convert.ToInt32(this.Character[i].plrPerception);
             }
+        }
+        public rootCharacter() {
+            //Load debug player shown as index 0
+            string cwr = Directory.GetCurrentDirectory();
+            DirectoryInfo cwrParent = Directory.GetParent(cwr);
+            cwrParent = cwrParent.Parent;
+            cwr = cwrParent.FullName + "/JsonFiles/DebugCharacter.json";
+            string charJson = File.ReadAllText(cwr);
         }
     }
 }

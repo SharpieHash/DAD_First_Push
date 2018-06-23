@@ -80,6 +80,9 @@
     <Compile Include="PlrSheet\Character.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adventureForm.resx">
+      <DependentUpon>adventureForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Classes\gameSetup.resx">
       <DependentUpon>gameSetup.cs</DependentUpon>
     </EmbeddedResource>
