@@ -21,10 +21,7 @@ namespace DAD
 
         private void dungeonMaster_Load(object sender, EventArgs e)
         {
-            string curDir = Directory.GetCurrentDirectory();
-            DirectoryInfo curDirPar = Directory.GetParent(curDir);
-            curDirPar = curDirPar.Parent;
-            this.characterInfoHtml.Navigate(new Uri(String.Format("{0}/PlrSheet/characterInfo.html", curDirPar.FullName)));
+               
         }
 
         private void locationOneBtn_Click(object sender, EventArgs e)
@@ -61,6 +58,6 @@ namespace DAD
                 mapLarge = true;
                 //big map show ();
             }
-        } 
+        }
     }
 }

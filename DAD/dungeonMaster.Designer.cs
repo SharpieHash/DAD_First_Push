@@ -46,7 +46,7 @@
             this.mapDisplay = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.locationNameDispla = new System.Windows.Forms.TextBox();
-            this.characterInfoHtml = new System.Windows.Forms.WebBrowser();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -115,7 +115,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Controls.Add(this.characterInfoHtml);
+            this.panel3.Controls.Add(this.comboBox1);
             this.panel3.Controls.Add(this.characterLobby);
             this.panel3.Location = new System.Drawing.Point(1129, 372);
             this.panel3.Name = "panel3";
@@ -232,14 +232,17 @@
             this.locationNameDispla.Size = new System.Drawing.Size(1066, 15);
             this.locationNameDispla.TabIndex = 0;
             // 
-            // characterInfoHtml
+            // comboBox1
             // 
-            this.characterInfoHtml.Location = new System.Drawing.Point(15, 53);
-            this.characterInfoHtml.MinimumSize = new System.Drawing.Size(20, 20);
-            this.characterInfoHtml.Name = "characterInfoHtml";
-            this.characterInfoHtml.ScrollBarsEnabled = false;
-            this.characterInfoHtml.Size = new System.Drawing.Size(267, 239);
-            this.characterInfoHtml.TabIndex = 3;
+            this.comboBox1.BackColor = System.Drawing.Color.Gray;
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(90, 65);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(125, 24);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.Text = "---------Drop---------";
             // 
             // dungeonMaster
             // 
@@ -292,6 +295,6 @@
         private System.Windows.Forms.TextBox modName;
         private System.Windows.Forms.TextBox characterLobby;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.WebBrowser characterInfoHtml;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
